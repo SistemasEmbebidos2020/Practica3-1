@@ -17,12 +17,6 @@ print (home_joints)
 robot.MoveJ(home_joints)
 pose_ref=robot.Pose()
 
-home_joints_list =  robot.JointsHome().tolist()
-print (home_joints_list)
-j1home = home_joints_list[0]
-j2home = home_joints_list[1]
-j3home = home_joints_list[2]
-print (j1home, j2home, j3home)
 limitneg,limitpos,pp = robot.JointLimits()
 print (limitneg,  "\n" ,limitpos ,"\n" )
 aprox = 100
