@@ -31,3 +31,5 @@ a7 = pose_ref*transl(100,200,0)
 a8 = pose_ref*transl(100,200,0+aprox)
 
 A = [a0, a1, a2, a3, a4, a5, a6, a7,a8]
+for i in range(9):
+    robot.MoveJ(A[i]*rotx(-pi))
